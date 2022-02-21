@@ -2,15 +2,43 @@
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   position: absolute;
+  max-height: 400px;
   width: 50vw;
-  /* height: 40vh; */
-  top: calc(50% - 20vh);
+  top: calc(50% - 200px);
   left: calc(50% - 25vw);
   color: #fff;
   font-size: 18px;
   padding: 11px;
+  text-align: center;
 }
 
 .wrapper_card {
   display: flex;
+}
+
+.cards_btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #344dda;
+  border-radius: 0.6em;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 1;
+  margin: 20px;
+  padding: 20px 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.third {
+  color: #fff;
+  box-shadow: 0 0 40px 40px #344dda inset, 0 0 0 0 #344dda;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #344dda inset, 0 0 10px 4px #344dda;
 }
