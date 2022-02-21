@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input[type='number'] {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+
+.wrapper_input {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.label_cards {
+  margin: 5px;
+}
+
+.input_cards {
+  background-color: rgba(0, 0, 0, 0.219);
+  width: 40%;
+  border: none;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  padding: 3px;
+}

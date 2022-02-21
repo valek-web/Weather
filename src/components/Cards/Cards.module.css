@@ -1,0 +1,16 @@
+.cards {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  position: absolute;
+  width: 50vw;
+  /* height: 40vh; */
+  top: calc(50% - 20vh);
+  left: calc(50% - 25vw);
+  color: #fff;
+  font-size: 18px;
+  padding: 11px;
+}
+
+.wrapper_card {
+  display: flex;
+}
