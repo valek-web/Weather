@@ -30,7 +30,7 @@ input[type='number'] {
 }
 
 .input_cards {
-  background-color: rgba(0, 0, 0, 0.219);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 40%;
   border: none;
   border-radius: 15px;

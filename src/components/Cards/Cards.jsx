@@ -25,7 +25,7 @@ const Cards = () => {
                 ? `+${Math.round(respons.data.main.temp - 273)}`
                 : `${Math.round(respons.data.main.temp - 273)}°C`
             }°C`,
-            city: `City: ${respons.data.name}`,
+            city: !respons.data.name ? 'No data' : `City: ${respons.data.name}`,
           },
 
           {

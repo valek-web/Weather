@@ -1,5 +1,5 @@
 .cards {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 15px;
   position: absolute;
   width: 70vw;
@@ -22,7 +22,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #344dda;
+  border: 2px solid #497edf;
   border-radius: 0.6em;
   cursor: pointer;
   font-size: 17px;
@@ -35,12 +35,12 @@
 
 .third {
   color: #fff;
-  box-shadow: 0 0 40px 40px #344dda inset, 0 0 0 0 #344dda;
+  box-shadow: 0 0 40px 40px #497edf inset, 0 0 0 0 #497edf;
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
 }
 .third:hover {
-  box-shadow: 0 0 10px 0 #344dda inset, 0 0 10px 4px #344dda;
+  box-shadow: 0 0 10px 0 #497edf inset, 0 0 10px 4px #497edf;
 }
 
 @media screen and (max-width: 1050px) {
@@ -52,6 +52,17 @@
 @media screen and (max-width: 780px) {
   .wrapper_card {
     flex-wrap: wrap;
+  }
+
+  .third {
+    color: #fff;
+    box-shadow: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+
+  .third:hover {
+    box-shadow: none;
   }
 }
 

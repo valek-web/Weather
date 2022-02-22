@@ -4,7 +4,9 @@
   margin: 0;
 }
 .App {
-  background: linear-gradient(#9198e5, #344dda);
+  background-image: url('https://s1.1zoom.ru/b6259/712/Sky_Clouds_From_above_533131_1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   width: 100vw;
   min-height: 100vh;
 }
