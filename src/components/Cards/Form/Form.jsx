@@ -3,6 +3,7 @@ import styles from './Form.module.css'
 
 const Form = (props) => {
   const changesStateLatitude = (newValue) => {
+    props.setWeather('')
     let value = newValue.currentTarget.value
     if (Number(value) > 90) {
       alert('Maximum value 90!')
@@ -16,6 +17,7 @@ const Form = (props) => {
   }
 
   const changesStateLongitude = (newValue) => {
+    props.setWeather('')
     let value = newValue.currentTarget.value
     if (Number(value) > 180) {
       alert('Maximum value 180!')

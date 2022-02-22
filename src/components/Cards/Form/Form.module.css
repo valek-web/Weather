@@ -19,6 +19,12 @@ input[type='number'] {
   padding: 10px;
 }
 
+.wrapper_input div {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}
+
 .label_cards {
   margin: 5px;
 }
@@ -30,4 +36,15 @@ input[type='number'] {
   border-radius: 15px;
   color: rgb(255, 255, 255);
   padding: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper_input div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .wrapper_input {
+    display: block;
+  }
 }

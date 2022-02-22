@@ -2,10 +2,10 @@
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   position: absolute;
-  max-height: 400px;
-  width: 50vw;
-  top: calc(50% - 200px);
-  left: calc(50% - 25vw);
+  width: 70vw;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
   color: #fff;
   font-size: 18px;
   padding: 11px;
@@ -41,4 +41,25 @@
 }
 .third:hover {
   box-shadow: 0 0 10px 0 #344dda inset, 0 0 10px 4px #344dda;
+}
+
+@media screen and (max-width: 1050px) {
+  .cards {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wrapper_card {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cards {
+    width: 90vw;
+  }
+  .cards_btn {
+    margin: 7px;
+  }
 }

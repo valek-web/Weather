@@ -1,17 +1,63 @@
 .card {
-  width: calc(50vw / 3);
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.897);
   height: 200px;
   border-radius: 15px;
   color: #000;
   padding: 7px;
   transition: 1s;
-}
-
-.card:nth-child(2) {
-  margin: 11px;
+  position: relative;
+  margin: 0 11px 0 11px;
 }
 
 .card:hover {
   background-color: rgba(255, 255, 255, 0.705);
+  transform: scale(1.03);
+}
+
+.bottom_info {
+  position: absolute;
+  bottom: 7px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+}
+
+.center_info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+}
+
+.top_info {
+  font-size: 21px;
+}
+
+@media screen and (max-width: 1050px) {
+  .center_info {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .card {
+    font-size: 35px;
+    margin: 7px 0 7px 0;
+    height: 150px;
+  }
+
+  .bottom_info {
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+  }
+
+  .card:hover {
+    background-color: rgba(255, 255, 255);
+    transform: none;
+  }
 }
