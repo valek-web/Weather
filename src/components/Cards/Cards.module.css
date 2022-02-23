@@ -43,6 +43,10 @@
   box-shadow: 0 0 10px 0 #497edf inset, 0 0 10px 4px #497edf;
 }
 
+.validate_form_info {
+  color: rgb(255, 58, 58);
+}
+
 @media screen and (max-width: 1050px) {
   .cards {
     width: 80vw;
