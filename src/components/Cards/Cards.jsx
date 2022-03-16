@@ -3,6 +3,13 @@ import Card from './Card/Card'
 import styles from './Cards.module.css'
 import Form from './Form/Form'
 import getWeatherAPI from '../../api/api'
+import Select from 'react-select'
+
+const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+]
 
 const Cards = () => {
   const [latLon, setLatLon] = useState({ latitude: 0, longitude: 0 })
@@ -53,15 +60,22 @@ const Cards = () => {
       />
     ))
 
+  const [selectedOption, setSelectedOption] = useState(null)
+
   return (
     <div className={styles.cards}>
       {!weather ? null : (
         <div className={styles.wrapper_card}>{cards_map()}</div>
       )}
-      Enter coordinates:
+      Enter coordinates or select a city:
       {!!validate_form ? (
         <div className={styles.validate_form_info}>{validate_form}</div>
       ) : null}
+      <Select
+        defaultValue={selectedOption}
+        onChange={setSelectedOption}
+        options={options}
+      />
       <Form
         latLon={latLon}
         setLatLon={setLatLon}

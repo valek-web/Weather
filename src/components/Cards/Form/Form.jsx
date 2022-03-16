@@ -1,5 +1,5 @@
-import React from 'react'
 import styles from './Form.module.css'
+import React from 'react'
 
 const Form = (props) => {
   const changesStateLatitude = (newValue) => {
