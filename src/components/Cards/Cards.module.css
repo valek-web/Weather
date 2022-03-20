@@ -22,7 +22,7 @@
   -moz-appearance: none;
   appearance: none;
   background-color: transparent;
-  border: 2px solid #497edf;
+  border: 2px solid rgb(38, 132, 254);
   border-radius: 0.6em;
   cursor: pointer;
   font-size: 17px;
@@ -35,16 +35,21 @@
 
 .third {
   color: #fff;
-  box-shadow: 0 0 40px 40px #497edf inset, 0 0 0 0 #497edf;
+  box-shadow: 0 0 40px 40px rgb(38, 132, 254) inset, 0 0 0 0 rgb(38, 132, 254);
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
 }
 .third:hover {
-  box-shadow: 0 0 10px 0 #497edf inset, 0 0 10px 4px #497edf;
+  box-shadow: 0 0 10px 0 rgb(38, 132, 254) inset, 0 0 10px 4px rgb(38, 132, 254);
 }
 
 .validate_form_info {
   color: rgb(255, 58, 58);
+}
+
+.wrapper_select {
+  width: 300px;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 1050px) {

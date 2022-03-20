@@ -4,12 +4,7 @@ import styles from './Cards.module.css'
 import Form from './Form/Form'
 import getWeatherAPI from '../../api/api'
 import Select from 'react-select'
-
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' },
-]
+import { options } from '../../city'
 
 const Cards = () => {
   const [latLon, setLatLon] = useState({ latitude: 0, longitude: 0 })
@@ -62,6 +57,18 @@ const Cards = () => {
 
   const [selectedOption, setSelectedOption] = useState(null)
 
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      borderBottom: '1px solid #497ede',
+      color: state.isSelected ? '#fff' : '#497ede',
+      padding: 5,
+    }),
+    singleValue: (provided, state) => {
+      return { ...provided }
+    },
+  }
+
   return (
     <div className={styles.cards}>
       {!weather ? null : (
@@ -71,11 +78,14 @@ const Cards = () => {
       {!!validate_form ? (
         <div className={styles.validate_form_info}>{validate_form}</div>
       ) : null}
-      <Select
-        defaultValue={selectedOption}
-        onChange={setSelectedOption}
-        options={options}
-      />
+      <div className={styles.wrapper_select}>
+        <Select
+          defaultValue={selectedOption}
+          onChange={setSelectedOption}
+          options={options}
+          styles={customStyles}
+        />
+      </div>
       <Form
         latLon={latLon}
         setLatLon={setLatLon}
