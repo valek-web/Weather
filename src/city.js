@@ -13,9 +13,9 @@ export const options = [
   { value: 'samara', label: 'Samara' },
   { value: 'omsk', label: 'Omsk' },
   { value: 'ufa', label: 'Ufa' },
-  { value: 'vanilla', label: 'Vanilla' },
+  { value: 'belgorod', label: 'Belgorod' },
   { value: 'krasnoyarsk', label: 'Krasnoyarsk' },
-  { value: 'permian', label: 'Permian' },
+  { value: 'perm', label: 'Perm' },
   { value: 'volgograd', label: 'Volgograd' },
   { value: 'saratov', label: 'Saratov' },
   { value: 'tyumen', label: 'Tyumen' },
@@ -24,4 +24,5 @@ export const options = [
   { value: 'tomsk', label: 'Tomsk' },
   { value: 'ryazan', label: 'Ryazan' },
   { value: 'tver', label: 'Tver' },
+  { value: 'pechora', label: 'Pechora' },
 ]

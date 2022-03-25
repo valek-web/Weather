@@ -69,6 +69,93 @@ const Cards = () => {
     },
   }
 
+  const setSelected = (value) => {
+    setWeather('')
+    setSelectedOption(value)
+    switch (value.value) {
+      case 'moscow':
+        setLatLon({ latitude: 55.7558, longitude: 37.6173 })
+        break
+      case 'voronezh':
+        setLatLon({ latitude: 51.6683, longitude: 39.1919 })
+        break
+      case 'lipetsk':
+        setLatLon({ latitude: 52.6122, longitude: 39.5981 })
+        break
+      case 'chelyabinsk':
+        setLatLon({ latitude: 55.1644, longitude: 61.4368 })
+        break
+      case 'sochi':
+        setLatLon({ latitude: 43.6028, longitude: 39.7342 })
+        break
+      case 'novosibirsk':
+        setLatLon({ latitude: 54.9833, longitude: 82.8964 })
+        break
+      case 'vladivostok':
+        setLatLon({ latitude: 43.1332, longitude: 131.9113 })
+        break
+      case 'ekaterinburg':
+        setLatLon({ latitude: 56.8431, longitude: 60.6454 })
+        break
+      case 'petersburg':
+        setLatLon({ latitude: 59.9311, longitude: 30.3609 })
+        break
+      case 'nizhnyNovgorod':
+        setLatLon({ latitude: 56.3269, longitude: 44.0059 })
+        break
+      case 'kazan':
+        setLatLon({ latitude: 55.7879, longitude: 49.1233 })
+        break
+      case 'samara':
+        setLatLon({ latitude: 53.2038, longitude: 50.1606 })
+        break
+      case 'omsk':
+        setLatLon({ latitude: 54.9914, longitude: 73.3645 })
+        break
+      case 'ufa':
+        setLatLon({ latitude: 54.7348, longitude: 55.9579 })
+        break
+      case 'belgorod':
+        setLatLon({ latitude: 50.5997, longitude: 36.5983 })
+        break
+      case 'krasnoyarsk':
+        setLatLon({ latitude: 56.0153, longitude: 92.8932 })
+        break
+      case 'perm':
+        setLatLon({ latitude: 58.0092, longitude: 56.227 })
+        break
+      case 'volgograd':
+        setLatLon({ latitude: 48.708, longitude: 44.5133 })
+        break
+      case 'saratov':
+        setLatLon({ latitude: 51.5462, longitude: 46.0154 })
+        break
+      case 'tyumen':
+        setLatLon({ latitude: 57.1553, longitude: 65.5619 })
+        break
+      case 'irkutsk':
+        setLatLon({ latitude: 52.2855, longitude: 104.289 })
+        break
+      case 'yaroslavl':
+        setLatLon({ latitude: 57.6261, longitude: 39.8845 })
+        break
+      case 'tomsk':
+        setLatLon({ latitude: 56.4884, longitude: 84.948 })
+        break
+      case 'ryazan':
+        setLatLon({ latitude: 54.6095, longitude: 39.7126 })
+        break
+      case 'tver':
+        setLatLon({ latitude: 56.8587, longitude: 35.9176 })
+        break
+      case 'pechora':
+        setLatLon({ latitude: 65.1476, longitude: 57.228 })
+        break
+      default:
+        setLatLon({ latitude: 0, longitude: 0 })
+    }
+  }
+
   return (
     <div className={styles.cards}>
       {!weather ? null : (
@@ -81,7 +168,7 @@ const Cards = () => {
       <div className={styles.wrapper_select}>
         <Select
           defaultValue={selectedOption}
-          onChange={setSelectedOption}
+          onChange={setSelected}
           options={options}
           styles={customStyles}
         />
